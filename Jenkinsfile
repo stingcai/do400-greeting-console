@@ -21,6 +21,13 @@ pipeline{
             }
         }
 
+        stage("Release"){
+            steps{
+                sh '''
+                    oc project zgmjxg-greetings
+                '''
+            }
+        }
         // Add the Release stage here
     }
 }
