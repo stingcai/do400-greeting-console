@@ -25,6 +25,7 @@ pipeline{
             steps{
                 sh '''
                     oc project zgmjxg-greetings
+                    oc start-build greeting-console --follow --wait
                 '''
             }
         }
